@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Premium product catalog template">
+  <title>MONO STORE — Premium Catalog</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="announcement">GRATIS ONGKIR • PEMESANAN MUDAH VIA WHATSAPP • KOLEKSI TERBARU</div>
+
+<header class="header">
+  <div class="container navbar">
+    <a href="#" class="brand"><span>MONO</span>STORE</a>
+
+    <nav class="desktop-nav">
+      <a href="#home">Home</a>
+      <a href="#shop">Shop</a>
+      <a href="#collections">Collections</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="nav-actions">
+      <button class="icon-btn" id="searchBtn" aria-label="Cari">⌕</button>
+      <button class="icon-btn" id="bagBtn" aria-label="Keranjang">♡ <b id="bagCount">0</b></button>
+      <button class="hamburger" id="hamburger">☰</button>
+    </div>
+  </div>
+
+  <nav class="mobile-nav" id="mobileNav">
+    <a href="#home">Home</a><a href="#shop">Shop</a><a href="#collections">Collections</a>
+    <a href="#about">About</a><a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <div class="container hero-grid">
+    <div class="hero-copy">
+      <span class="pill">NEW SEASON 2026</span>
+      <h1>Simple things.<br><em>Better made.</em></h1>
+      <p>Temukan koleksi pilihan dengan desain modern, kualitas terkurasi, dan pengalaman belanja yang sederhana.</p>
+      <div class="hero-actions">
+        <a href="#shop" class="btn dark">Explore Collection <span>→</span></a>
+        <a href="#about" class="text-btn">Our Story</a>
+      </div>
+    </div>
+    
+<div class="hero-art">
+  <img
+    src="baju1.jpg"
+    alt="Foto produk MONO STORE"
+    class="hero-photo"
+  >
+
+  <div class="vertical-label">
+    CURATED / DAILY ESSENTIALS
+  </div>
+
+  <div class="hero-note">
+    <strong>01 / 06</strong><br>
+    Featured collection
+  </div>
+</div>
+  </div>
+</section>
+
+<section class="ticker">
+  <div>QUALITY FIRST ✦ EASY ORDER ✦ CURATED PRODUCTS ✦ FAST RESPONSE ✦ QUALITY FIRST ✦ EASY ORDER ✦</div>
+</section>
+
+<section class="section" id="shop">
+  <div class="container">
+    <div class="shop-head">
+      <div>
+        <span class="eyebrow">SHOP / 2026</span>
+        <h2>Featured products</h2>
+      </div>
+      <div class="controls">
+        <div class="search"><span>⌕</span><input id="searchInput" placeholder="Search product..." /></div>
+        <button class="filter-toggle" id="filterToggle">Filter +</button>
+      </div>
+    </div>
+
+    <div class="filter-row" id="filterRow">
+      <button class="filter active" data-cat="All">All</button>
+      <button class="filter" data-cat="Fashion">Fashion</button>
+      <button class="filter" data-cat="Lifestyle">Lifestyle</button>
+      <button class="filter" data-cat="Tech">Tech</button>
+      <button class="filter" data-cat="Accessories">Accessories</button>
+    </div>
+
+    <div class="product-grid" id="productGrid"></div>
+    <div class="empty" id="empty">Produk tidak ditemukan.</div>
+  </div>
+</section>
+
+<section class="editorial" id="collections">
+  <div class="container editorial-grid">
+    
+<div class="editorial-image">
+  <img src="baju3.jpg" alt="Collection Photo">
+</div>
+
+    <div class="editorial-copy">
+      <span class="eyebrow">THE EDIT / 01</span>
+      <h2>Designed for everyday.</h2>
+      <p>Koleksi yang dipilih untuk menemani aktivitas sehari-hari. Fokus pada fungsi, kenyamanan, dan tampilan yang timeless.</p>
+      <a href="#shop" class="underlined">Shop the edit →</a>
+    </div>
+  </div>
+</section>
+
+<section class="section benefits" id="about">
+  <div class="container">
+    <div class="benefit-title"><span class="eyebrow">WHY US</span><h2>Shopping, made easy.</h2></div>
+    <div class="benefit-grid">
+      <div><span>01</span><h3>Curated</h3><p>Produk dipilih berdasarkan kualitas dan kebutuhan pelanggan.</p></div>
+      <div><span>02</span><h3>Responsive</h3><p>Pesan dan konsultasi produk langsung melalui WhatsApp.</p></div>
+      <div><span>03</span><h3>Trusted</h3><p>Informasi produk, harga, dan pemesanan dibuat transparan.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="contact-banner" id="contact">
+  <div class="container contact-inner">
+    <div><span class="eyebrow light">LET'S TALK</span><h2>Need help choosing?</h2><p>Tim kami siap membantu memilih produk yang sesuai.</p></div>
+    <a href="https://wa.me/6281234567890" target="_blank" class="btn light-btn">Chat WhatsApp ↗</a>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="container footer-grid">
+    <div><a class="brand"><span>MONO</span>STORE</a><p>Curated products for everyday living.</p></div>
+    <div><strong>Explore</strong><a href="#shop">Shop</a><a href="#collections">Collections</a><a href="#about">About</a></div>
+    <div><strong>Contact</strong><p>Denpasar, Bali</p><p>+62 812-3456-7890</p></div>
+  </div>
+  <div class="copyright">© <span id="year"></span> Mono Store. All rights reserved.</div>
+</footer>
+
+<div class="overlay" id="overlay"></div>
+
+<aside class="drawer" id="drawer">
+  <button class="close" id="closeDrawer">×</button>
+  <span class="eyebrow">YOUR SELECTION</span>
+  <h2>Saved products</h2>
+  <div id="bagItems"></div>
+  <a class="btn dark full" id="checkoutBtn" target="_blank">Order via WhatsApp →</a>
+</aside>
+
+<div class="modal" id="modal">
+  <div class="modal-card">
+    <button class="close" id="closeModal">×</button>
+    <div class="modal-img" id="modalImg">PRODUCT</div>
+    <div class="modal-info">
+      <span class="eyebrow" id="modalCat">CATEGORY</span>
+      <h2 id="modalName">Product</h2>
+      <div class="modal-price" id="modalPrice">Rp0</div>
+      <p id="modalDesc"></p>
+      <div class="modal-actions">
+        <button class="btn dark" id="saveBtn">♡ Save product</button>
+        <a class="btn outline" id="askBtn" target="_blank">Ask WhatsApp</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
